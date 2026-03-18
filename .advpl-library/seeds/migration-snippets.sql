@@ -257,3 +257,13 @@ INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syn
 -- @op id=202603180054360_1f6c op=update ts=2026-03-18T00:54:36.027Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário.', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
 
+-- @op id=202603180107509_7664 op=insert ts=2026-03-18T01:07:50.954Z
+INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags) VALUES ('string-function-substr', 'Strings & Texto', 'SubStr', 'Retorna uma parte especifica da string.', '["string","texto","SubStr"]', 'SubStr( < cText >, < nIndex >, [ nLen ] )', '[{"name":"cText","type":"caractere","desc":"Indica a string que será tratada."},{"name":"nIndex","type":"numérico","desc":"Indica o indice inicial da string <cText>."},{"name":"nLen","type":"numérico","desc":"Indica o número de caracteres que retornará a partir de <nIndex>."}]', 'Retorna a string após realizar o tratamento.', 'User function substr1()
+  Local cTexto := "1234567"
+  
+  conout( SubStr( cTexto, 1    ) ) // Resultado: "1234567"
+  conout( SubStr( cTexto, 1, 5 ) ) // Resultado: "12345"
+  conout( SubStr( cTexto, 5    ) ) // Resultado: "567"
+  conout( SubStr( cTexto, 5, 2 ) ) // Resultado: "56"
+Return', '["string","texto","utilitario"]');
+
