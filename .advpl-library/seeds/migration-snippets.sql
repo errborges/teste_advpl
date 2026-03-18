@@ -257,3 +257,11 @@ INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syn
 -- @op id=202603180054360_1f6c op=update ts=2026-03-18T00:54:36.027Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário.', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
 
+-- @op id=202603180111429_09c0 op=insert ts=2026-03-18T01:11:42.917Z
+INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags) VALUES ('string-functions-transform', 'Strings & Texto', 'Transform', 'Converte qualquer valor para uma string formatada. Para isso, formata valores, do tipo caracter, data, lógico e numérico, conforme uma string de máscara especificada que inclui uma combinação de strings de template e funções de picture.', '["string","texto","Transform"]', 'Transform (<xExp>, cSayPicture) --> Ret', '[{"name":"xExp","type":"Qualquer","desc":"Indica o valor que será formatado. Esta expressão pode ser qualquer tipo de dado válido, exceto array, bloco de código e nulo."},{"name":"cSayPicture","type":"Caracter","desc":"Indica uma string de caracteres de máscara e template usada para descrever o formato da string que será retornada."}]', '(qualquer) Retorna a conversão da expressão (exp) para uma string formatada, conforme a definição do parâmetro cSayPicture.', 'User Function TESTE()
+    nValue := 123.45
+  
+    Transform(nValue, "@E 999,999.99" ) 
+    // Resultado:"    123,45"
+Return', '["string","texto","utilitario"]');
+
