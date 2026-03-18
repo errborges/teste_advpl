@@ -223,57 +223,30 @@ INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syn
 cText := "Linha @ para pesquisa @ de RAT"
 RAt( cPesq, cText ) // Resultado: 23 // Localizou a posição do último "@" na frase', '["string","texto","utilitario"]');
 
-<<<<<<< HEAD
 -- @op id=202603180033456_ee82 op=update ts=2026-03-18T00:33:45.680Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos. TESTE_ANTIGRAVITY', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
-=======
--- @op id=202603180034084_257f op=update ts=2026-03-18T00:34:08.489Z
-INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário. TESTE_VSCODE', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
->>>>>>> 14841d1f3905a3dd15e936888fabb37191ce8534
 
-<<<<<<< HEAD
 -- @op id=202603180039055_1ce4 op=update ts=2026-03-18T00:39:05.577Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos.', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
 
 -- @op id=202603180039129_de2d op=update ts=2026-03-18T00:39:12.954Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário.', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
 
-=======
--- @op id=202603180038319_ba86 op=update ts=2026-03-18T00:38:31.955Z
-INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos.', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
-
->>>>>>> 2b1b22c03c6251dbd4c74f47ff08b2e1245a0f7b
 -- @op id=202603180051126_cde2 op=update ts=2026-03-18T00:51:12.612Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos. teste', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
 
-<<<<<<< HEAD
 -- @op id=202603180052272_c612 op=update ts=2026-03-18T00:52:27.260Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos.', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
-=======
--- @op id=202603180052464_9641 op=update ts=2026-03-18T00:52:46.487Z
-INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário. teste aqui via VSCODE', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
->>>>>>> 7b99ae81232497fee9cbf172519c6295d8e8f9ed
 
 -- @op id=202603180054360_1f6c op=update ts=2026-03-18T00:54:36.027Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário.', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
 
-<<<<<<< HEAD
 -- @op id=202603180111429_09c0 op=insert ts=2026-03-18T01:11:42.917Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags) VALUES ('string-functions-transform', 'Strings & Texto', 'Transform', 'Converte qualquer valor para uma string formatada. Para isso, formata valores, do tipo caracter, data, lógico e numérico, conforme uma string de máscara especificada que inclui uma combinação de strings de template e funções de picture.', '["string","texto","Transform"]', 'Transform (<xExp>, cSayPicture) --> Ret', '[{"name":"xExp","type":"Qualquer","desc":"Indica o valor que será formatado. Esta expressão pode ser qualquer tipo de dado válido, exceto array, bloco de código e nulo."},{"name":"cSayPicture","type":"Caracter","desc":"Indica uma string de caracteres de máscara e template usada para descrever o formato da string que será retornada."}]', '(qualquer) Retorna a conversão da expressão (exp) para uma string formatada, conforme a definição do parâmetro cSayPicture.', 'User Function TESTE()
     nValue := 123.45
   
     Transform(nValue, "@E 999,999.99" ) 
     // Resultado:"    123,45"
-=======
--- @op id=202603180107509_7664 op=insert ts=2026-03-18T01:07:50.954Z
-INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags) VALUES ('string-function-substr', 'Strings & Texto', 'SubStr', 'Retorna uma parte especifica da string.', '["string","texto","SubStr"]', 'SubStr( < cText >, < nIndex >, [ nLen ] )', '[{"name":"cText","type":"caractere","desc":"Indica a string que será tratada."},{"name":"nIndex","type":"numérico","desc":"Indica o indice inicial da string <cText>."},{"name":"nLen","type":"numérico","desc":"Indica o número de caracteres que retornará a partir de <nIndex>."}]', 'Retorna a string após realizar o tratamento.', 'User function substr1()
-  Local cTexto := "1234567"
-  
-  conout( SubStr( cTexto, 1    ) ) // Resultado: "1234567"
-  conout( SubStr( cTexto, 1, 5 ) ) // Resultado: "12345"
-  conout( SubStr( cTexto, 5    ) ) // Resultado: "567"
-  conout( SubStr( cTexto, 5, 2 ) ) // Resultado: "56"
->>>>>>> aa08bf50de4c786120d6b5a1cce3bc5429989902
 Return', '["string","texto","utilitario"]');
 
 -- @op id=202603180115134_d9fc op=update ts=2026-03-18T01:15:13.462Z
