@@ -223,3 +223,6 @@ INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syn
 cText := "Linha @ para pesquisa @ de RAT"
 RAt( cPesq, cText ) // Resultado: 23 // Localizou a posição do último "@" na frase', '["string","texto","utilitario"]');
 
+-- @op id=202603180034084_257f op=update ts=2026-03-18T00:34:08.489Z
+INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário. TESTE_VSCODE', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
+
