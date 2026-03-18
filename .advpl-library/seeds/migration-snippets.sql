@@ -223,6 +223,11 @@ INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syn
 cText := "Linha @ para pesquisa @ de RAT"
 RAt( cPesq, cText ) // Resultado: 23 // Localizou a posição do último "@" na frase', '["string","texto","utilitario"]');
 
+<<<<<<< HEAD
 -- @op id=202603180033456_ee82 op=update ts=2026-03-18T00:33:45.680Z
 INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-error', 'Alertas & Mensagens', 'FWAlertError', 'Exibe uma mensagem de erro com ícone vermelho (X). Utilizado para informar falhas ou erros críticos. TESTE_ANTIGRAVITY', '["alert","alerta","error","erro","mensagem","popup","fwalerterror"]', 'FWAlertError( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto do erro"},{"name":"cTitulo","type":"Character","desc":"Título da janela (opcional)"}]', 'Nil', 'FWAlertError("Erro ao gravar registro! Verifique os campos obrigatórios.", "Erro")', '["ui","dialog","framework"]', '');
+=======
+-- @op id=202603180034084_257f op=update ts=2026-03-18T00:34:08.489Z
+INSERT OR REPLACE INTO snippets (id, category, title, description, keywords, syntax, params, returns, example, tags, D_E_L_E_T_) VALUES ('fw-alert-info', 'Alertas & Mensagens', 'FWAlertInfo', 'Exibe uma mensagem informativa com ícone azul (letra ''i''). Ideal para notificações neutras ao usuário. TESTE_VSCODE', '["alert","alerta","info","informativo","mensagem","popup","dialogo","fwalertinfo"]', 'FWAlertInfo( cMsg, cTitulo )', '[{"name":"cMsg","type":"Character","desc":"Texto da mensagem a ser exibida"},{"name":"cTitulo","type":"Character","desc":"Título da janela do alerta (opcional)"}]', 'Nil', 'FWAlertInfo("Operação realizada com sucesso!", "Título FWAlertInfo")', '["ui","dialog","framework"]', '');
+>>>>>>> 14841d1f3905a3dd15e936888fabb37191ce8534
 
